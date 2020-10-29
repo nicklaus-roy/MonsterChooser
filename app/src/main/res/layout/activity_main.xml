@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose a monster"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.092" />
+
+    <ImageButton
+        android:id="@+id/monster01"
+        android:layout_width="148dp"
+        android:layout_height="138dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/monster02"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.002"
+        app:srcCompat="@drawable/monster01" />
+
+    <ImageButton
+        android:id="@+id/monster02"
+        android:layout_width="155dp"
+        android:layout_height="146dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/monster02" />
+
+    <ImageButton
+        android:id="@+id/monster03"
+        android:layout_width="145dp"
+        android:layout_height="143dp"
+        android:layout_marginStart="40dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/monster01"
+        app:layout_constraintVertical_bias="0.114"
+        app:srcCompat="@drawable/monster03" />
+
+    <ImageButton
+        android:id="@+id/monster04"
+        android:layout_width="151dp"
+        android:layout_height="137dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="40dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.906"
+        app:layout_constraintStart_toEndOf="@+id/monster03"
+        app:layout_constraintTop_toBottomOf="@+id/monster02"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/monster04" />
+</androidx.constraintlayout.widget.ConstraintLayout>
